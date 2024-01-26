@@ -1,0 +1,54 @@
+/* Agrega estos estilos en tu archivo de estilos (estilos.css) */
+#anuncios-container {
+    position: fixed;
+    top: 15%; /* Ajusta la posición vertical según tus necesidades */
+    left: 0;
+    width: 100%; /* Cambiado a 100% para dispositivos móviles */
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+    z-index: 999; /* Asegura que el anuncio esté por encima del contenido */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregado sombra */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Agrega estos estilos en tu archivo de estilos (estilos.css) */
+.anuncio {
+    position: relative;
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #333;
+    margin-bottom: 10px; /* Espaciado entre anuncios */
+}
+
+.cerrar-anuncio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Ajusta el tamaño del botón de cerrar según tus necesidades */
+    color: red;
+}
+
+/* Agrega estos estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    #anuncios-container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .anuncio {
+        font-size: 14px;
+    }
+
+    .cerrar-anuncio {
+        top: 0;
+        right: 0;
+        font-size: 14px;
+    }
+}

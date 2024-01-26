@@ -1,40 +1,55 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    left: 0;
     background-color: #f0f0f0;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden; /* Evitar que la página se desplace por defecto */
 }
 
-#tablero {
-    width: 1000px;
-    height: 500px;
+#body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.3s ease; /* Agrega transición para suavizar el movimiento */
+}
+
+
+.juego {
+    width: 450px;
+    height: 220px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
+    
 }
 
+
+
 /* Estilos para el tablero */
-#tablero {
+.tablero {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Ajusta según el número de celdas por fila */
-    gap: 10px;
+    grid-template-columns: repeat(10, 1fr); /* Ajusta según el número de celdas por fila */
+    gap: 5px;
     padding: 10px;
     border: 3px solid #333;
     background-color: #fff;
 }
 
 .celda {
-    width: 100%;
-    height: 150px; /* Altura de las celdas */
+    width: 2rem;
+    height: 2rem; /* Altura de las celdas */
     border: 2px dashed #666;
     display: flex;
     justify-content: center;

@@ -5,20 +5,48 @@
     <title>Bingo Administrador</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <div id="tablero">
-        
-        <div class="celda" id="celda1" onclick="cambiarEstado('celda1')"></div>
-        <div class="celda" id="celda2" onclick="cambiarEstado('celda2')"></div>
-        <div class="celda" id="celda3" onclick="cambiarEstado('celda3')"></div>
-        <div class="celda" id="celda4" onclick="cambiarEstado('celda4')"></div>
-        <div class="celda" id="celda5" onclick="cambiarEstado('celda5')"></div>
-       
+<body id="body">
+    <div class="juego" id="juego">
+        <p>1</p>
+        <div class="tablero" id="tablero"><!-- Celdas del tablero -->
+            <div class="celda" id="celda1" onclick="cambiarEstado('celda1')"></div>
+            <div class="celda" id="celda2" onclick="cambiarEstado('celda2')"></div>
+            <div class="celda" id="celda3" onclick="cambiarEstado('celda3')"></div>
+            <div class="celda" id="celda4" onclick="cambiarEstado('celda4')"></div>
+            <div class="celda" id="celda5" onclick="cambiarEstado('celda5')"></div>
+        </div>
     </div>
+    <div class="juego" id="juego">
+        <p>2</p>
+        <div class="tablero" id="tablero2"><!-- Celdas del tablero -->
+            <div class="celda" id="celda2" onclick="cambiarEstado('celda2')"></div>
+        </div>
+    </div>
+    <div class="juego" id="juego">
+        <p>3</p>
+        <div class="tablero" id="tablero3"><!-- Celdas del tablero -->
+            <div class="celda" id="celda3" onclick="cambiarEstado('celda3')"></div>
+        </div>
+    </div>
+    <div class="juego" id="juego">
+        <p>4</p>
+        <div class="tablero" id="tablero4"><!-- Celdas del tablero -->
+            <div class="celda" id="celda4" onclick="cambiarEstado('celda4')"></div>
+        </div>
+    </div>
+    <div class="juego" id="juego">
+        <p>5</p>
+        <div class="tablero" id="tablero5"><!-- Celdas del tablero -->
+            <div class="celda" id="celda5" onclick="cambiarEstado('celda5')"></div>
+        </div>
+    </div>
+    
+
 
     <div id="ventana-emergente" class="ventana-emergente">
         <img id="imagen-ventana-emergente" src="" alt="Imagen de la celda" />
     </div>
     <script src="script.js"></script>
+    <script src="zoom.js"></script>
 </body>
 </html>

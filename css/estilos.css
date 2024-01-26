@@ -1,0 +1,132 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            left: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .juego {
+            width: 450px;
+            height: 220px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+
+        /* Estilos para el tablero */
+        .tablero {
+            width: 100%;
+            height: auto; /* Altura automática para acomodar todas las celdas */
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            padding: 10px;
+            border: 3px solid #333;
+            background-color: #fff;
+            transition: transform 0.3s ease-out;
+            overflow: hidden;
+        }
+
+        .juego:hover{
+            transform: scale(1.5);
+            position: absolute;
+            top: 20%;
+            left: 35%;
+        }
+
+        .celda {
+            width: 2rem;
+            height: 2rem; /* Altura automática para mantener la proporción */
+            border: 2px dashed #666;
+            display: flex;
+            background-color: #eaeaea;
+            transition: background-color 0.2s ease;
+            background-size: cover;
+            transition: filter 0.3s ease; /* Transición suave al cambiar el filtro */
+        }
+
+        .celda.conFicha {
+            filter: grayscale(0%); /* Elimina el filtro de escala de grises cuando se coloca una ficha */
+        }
+
+        .celda:hover {
+            background-color: #dcdcdc;
+            
+        }
+
+        .celda.activo {
+            filter: grayscale(0%); /* Imagen a color cuando está activa */
+        }
+
+        /* Estilos para las fichas */
+        #fichas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ficha {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF50;
+            cursor: grab;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .ficha:active {
+            opacity: 0.5;
+            transform: scale(1.1);
+            cursor: grabbing;
+        }
+
+        /* Estilos específicos para cada ficha */
+        #ficha1 {
+            background-color: #4CAF50; /* Verde */
+        }
+
+        #ficha2 {
+            background-color: #2196F3; /* Azul */
+        }
+
+        #ficha3 {
+            background-color: #f44336; /* Rojo */
+        }
+
+        #ficha4 {
+            background-color: #FFEB3B; /* Amarillo */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .juego {
+                flex-direction: column;
+            }
+            .tablero, #fichas {
+                width: 100%;
+            }
+        }
+
+        /* Estilos para el botón de retroceder */
+        #btnRetroceder {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
