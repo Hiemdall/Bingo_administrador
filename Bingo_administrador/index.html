@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bingo Administrador</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+</head>
+<body>
+    
+<div class="contenedor" id="contenedor">
+
+    <!-- Contenedor del juego 1 -->
+    <div class="juego" id="juego1">
+      
+        <div class="tablero" id="tablero1">
+            <!-- Generar celdas dinámicamente -->
+            <script>generarCeldas("tablero1", 60);</script>
+           
+        </div>
+    </div>
+
+    <!-- Contenedor del juego 2 -->
+    <div class="juego" id="juego2">
+       
+        <div class="tablero" id="tablero2">
+            <!-- Generar celdas dinámicamente -->
+            <script>generarCeldas("tablero2", 60);</script>
+        </div>
+    </div>
+
+    <!-- Contenedor del juego 3 -->
+    <div class="juego" id="juego3">
+     
+        <div class="tablero" id="tablero3">
+            <!-- Generar celdas dinámicamente -->
+            <script>generarCeldas("tablero3", 60);</script>
+        </div>
+    </div>
+
+    <!-- Contenedor del juego 4 -->
+    <div class="juego" id="juego4">
+       
+        <div class="tablero" id="tablero4">
+            <!-- Generar celdas dinámicamente -->
+            <script>generarCeldas("tablero4", 60);</script>
+        </div>
+    </div>
+
+    <!-- Contenedor del juego 5 -->
+    <div class="juego" id="juego5">
+        
+        <div class="tablero" id="tablero5">
+            <!-- Generar celdas dinámicamente -->
+            <script>generarCeldas("tablero5", 60);</script>
+        </div>
+    </div>
+
+    <div id="ventana-emergente" class="ventana-emergente">
+        <img id="imagen-ventana-emergente" src="" alt="Imagen de la celda" />
+    </div>
+    <script src="script.js"></script>
+    <script src="../js/zoom.js"></script>
+    <script src="../js/celdas_adm.js"></script>
+</div>
+</body>
+</html>
