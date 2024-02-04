@@ -1,0 +1,96 @@
+/* Estilos generales */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    left: 0;
+    background-color: #1b0905;
+}
+
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#contenedor{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.juego {
+    width: 90%; /* Ajusta el ancho del juego según el tamaño de la pantalla */
+    max-width: 450px; /* Establece un ancho máximo */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #bc883d;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos para el tablero */
+.tablero {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del tablero */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr)); /* Ajusta automáticamente el número de columnas */
+    gap: 5px;
+    padding: 10px;
+    border: 3px solid #333;
+    background-color: #1b0905;
+}
+
+.celda {
+    width: 100%; /* Ocupa todo el espacio disponible */
+    height: 0;
+    padding-top: 100%; /* Proporción cuadrada para las celdas */
+    border: 2px dashed #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.celda.activo {
+    filter: grayscale(0%);
+}
+
+/* Estilos base para la ventana emergente */
+.ventana-emergente {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw; /* Ancho automático basado en el tamaño de la imagen */
+    height: 100vh; /* Altura automática basada en el tamaño de la imagen */
+    display: none;
+    z-index: 1000;
+    text-align: center; /* Alineación del texto e imágenes al centro */
+    padding: 20px; /* Espaciado interior */
+}
+
+/* Estilos para la imagen dentro de la ventana emergente */
+#imagen-ventana-emergente {
+    max-width: 200vw; /* Máximo ancho de la imagen */
+    max-height: 200vh; /* Máximo altura de la imagen */
+    margin: auto; /* Centrar la imagen */
+    width: 200px;
+    height: 200px;
+}
+
+.ventana-emergente.activo {
+    display: block;
+}

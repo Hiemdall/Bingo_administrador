@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Bingo</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/anuncio.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+ 
+      <style>
+         .hidden {
+            display: none;
+         }
+      </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- cargador -->
+      <div class="loader_bg">
+          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <div class="wrapper">
+          <!-- fin del cargador -->
+          <div class="sidebar">
+              <!-- Barra lateral -->
+              <nav id="sidebar">
+                  <div id="dismiss">
+                      <i class="fa fa-arrow-left"></i>
+                  </div>
+                  <ul class="list-unstyled components">
+                      <li class="active">
+                          <a href="index.html">Inicio</a>
+                      </li>
+                      <li>
+                          <a href="#about">Acerca de</a>
+                      </li>
+                      <li>
+                          <a href="#game">Premios</a>
+                      </li>
+                      <li>
+                          <a href="#customer">Nuestros clientes</a>
+                      </li>
+                      <li>
+                          <a href="#contact">Contáctanos</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+          <div id="content">
+              <!-- encabezado -->
+              <header>
+                  <!-- encabezado interno -->
+                  <div class="head_top">
+                      <div class="header">
+                          <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-3 logo_section">
+                                      <div class="full">
+                                          <div class="center-desk">
+                                              <div class="logo">
+                                                  <a href="index.html"><img src="images/logo.png" alt="#"></a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-9">
+                                      <div class="right_header_info">
+                                          <ul>
+                                              <li class="menu_iconb">
+                                                  <a href="form_login.php" id="loginLink">Login</a>
+                                              </li>
+                                              <li>
+                                                  <button type="button" id="sidebarCollapse">
+                                                      <img src="images/menu_icon.png" alt="#" />
+                                                  </button>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <!-- fin del encabezado interno -->
+              <!-- fin del encabezado -->
+              <section class="slider_section">
+                  <div class="banner_main">
+                      <img src="images/bg_main.jpg" alt="#"/>
+                      <div class="container-fluid padding3">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="text-bg">
+                                      <a href="Javascript:void(0)">Jugar ahora</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- Categorías -->
+              <!-- casino -->
+              <div id="game" class="casino">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="titlepage">
+                                  <h2>Premios</h2>
+                                  <span></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-4 padding_bottom">
+                              <div class="game_box">
+                                  <figure><img src="images/game1.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 1</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-4 padding_bottom">
+                              <div class="game_box">
+                                  <figure><img src="images/game2.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 2</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-4 padding_bottom">
+                              <div class="game_box">
+                                  <figure><img src="images/game3.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 3</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-4 margin_bottom1">
+                              <div class="game_box">
+                                  <figure><img src="images/game4.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 4</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-4 margin_bottom1">
+                              <div class="game_box">
+                                  <figure><img src="images/game5.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 5</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="game_box">
+                                  <figure><img src="images/game6.jpg" alt="#"/></figure>
+                              </div>
+                              <div class="game">
+                                  <h3>Juego 6</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- fin del casino -->
+              <!-- licencia -->
+              <div class="licens">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="titlepage">
+                                  <h2>Licencia y Regulación</h2>
+                                  <span></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div id="licens" class="carousel slide licens_Carousel " data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                      <li data-target="#licens" data-slide-to="0" class="active"></li>
+                                      <li data-target="#licens" data-slide-to="1"></li>
+                                      <li data-target="#licens" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <div class="container">
+                                              <div class="carousel-caption ">
+                                                  <div class="row d_flex">
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <h4>Promociones</h4>
+                                                              </div>
+                                                              <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                                                              <a class="read_more" href="Javascript:void(0)">Jugar en línea</a>
+                                                          </div>
+                                                      </div>
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <figure><img src="images/jons_img1.png" alt="#"/></figure>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="container">
+                                              <div class="carousel-caption">
+                                                  <div class="row d_flex">
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <h4>Promociones</h4>
+                                                              </div>
+                                                              <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                                                              <a class="read_more" href="Javascript:void(0)">Jugar en línea</a>
+                                                          </div>
+                                                      </div>
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <figure><img src="images/jons_img1.png" alt="#"/></figure>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="container">
+                                              <div class="carousel-caption">
+                                                  <div class="row d_flex">
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <h4>Promociones</h4>
+                                                              </div>
+                                                              <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                                                              <a class="read_more" href="Javascript:void(0)">Jugar en línea</a>
+                                                          </div>
+                                                      </div>
+                                                      <div  class="col-md-6">
+                                                          <div class="test_box">
+                                                              <div class="jons">
+                                                                  <figure><img src="images/jons_img1.png" alt="#"/></figure>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#licens" role="button" data-slide="prev">
+                                      <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                                  </a>
+                                  <a class="carousel-control-next" href="#licens" role="button" data-slide="next">
+                                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                  </a>
+                              </div>
+                              <p class="lorem">Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles. Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                          </div>
+                          <div id="about" class="col-md-12">
+                              <ul class="spinit">
+                                  <li><a href="Javascript:void(0)">Acerca de Spinit</a></li>
+                                  <li><a href="Javascript:void(0)">Nuestras promociones</a></li>
+                                  <li><a href="Javascript:void(0)">Más de 1000 juegos</a></li>
+                                  <li><a href="Javascript:void(0)">Nuestra aplicación móvil</a></li>
+                              </ul>
+                              <div class="two_box">
+                                  <div class="row d_flex">
+                                      <div class="col-md-4">
+                                          <div class="many_box_img">
+                                              <figure><img src="images/imag.jpg" alt="#"/></figure>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-8">
+                                          <div class="many_box">
+                                              <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles. Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- fin de la licencia -->
+              <!-- cliente -->
+              <div id="customer"  class="customer">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="titlepage">
+                                  <h2>Lo que dicen nuestros clientes</h2>
+                                  <span></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-10 offset-md-1">
+                              <div class="customer_text">
+                                  <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles. Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteración de alguna forma, o han sido aleatorizados de tal manera que no parecen ni siquiera un poco creíbles.</p>
+                                  <div class="customer_box">
+                                      <i><img src="images/customer.png" alt="#"/></i>
+                                      <h4>Mark jo</h4>
+                                      <span>Humor inyectado</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- fin del cliente -->
+              <!-- solicitud -->
+              <div id="contact" class="reqeste">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="titlepage">
+                                  <h2>Solicitar una devolución de llamada</h2>
+                                  <span></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6 offset-md-3">
+                              <form id="cochang" class="form_main">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <input class="form_control" placeholder="Nombre" type="text" name="Nombre">
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input class="form_control" placeholder="Número de teléfono" type="text" name="Número de teléfono">
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input class="form_control" placeholder="Correo electrónico" type="text" name="Correo electrónico">
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input class="form_control" placeholder="Mensaje" type="text" name="Mensaje">
+                                      </div>
+                                      <div class="col-md-12">
+                                          <button class="send_btn">Enviar</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- fin de la solicitud -->
+              <!-- pie de página -->
+              <footer>
+                  <div class="footer">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                  <div class="address">
+                                      <h3>Subscríbete Ahora</h3>
+                                      <form class="newtetter">
+                                          <button class="submit">Enviar</button>
+                                          <input class="tetter" placeholder="Ingresa tu correo electrónico" type="text" name="Ingresa tu correo electrónico">
+                                      </form>
+                                  </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row">
+                                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                          <div class="address">
+                                              <h3>Enlaces</h3>
+                                              <ul class="Menu_footer">
+                                                  <li class="active"> <a href="index.html">Inicio</a> </li>
+                                                  <li><a href="#about">Acerca de</a> </li>
+                                                  <li><a href="#game">Juego</a> </li>
+                                                  <li><a href="#customer">Cliente</a> </li>
+                                                  <li><a href="#conatct">Contacto</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                          <div class="address">
+                                              <h3>Contacto</h3>
+                                              <ul class="Links_footer">
+                                                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="copyright">
+                          <div class="container">
+                              <p>Derechos de autor 2019 Todos los derechos reservados por <a href="https://html.design/">Plantillas html gratuitas</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+              <!-- fin del pie de página -->
+          </div>
+          <div class="overlay"></div>
+          <!-- archivos JavaScript -->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <!-- barra lateral -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+          <script src="js/custom.js"></script>
+          <script type="text/javascript">
+              $(document).ready(function() {
+                  $("#sidebar").mCustomScrollbar({
+                      theme: "minimal"
+                  });
+                  $('#dismiss, .overlay').on('click', function() {
+                      $('#sidebar').removeClass('active');
+                      $('.overlay').removeClass('active');
+                  });
+                  $('#sidebarCollapse').on('click', function() {
+                      $('#sidebar').addClass('active');
+                      $('.overlay').addClass('active');
+                      $('.collapse.in').toggleClass('in');
+                      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                  });
+              });
+          </script>
+          <script>
+              $(document).ready(function() {
+                  $(".fancybox").fancybox({
+                      openEffect: "none",
+                      closeEffect: "none"
+                  });
+                  $(".zoom").hover(function() {
+                      $(this).addClass('transition');
+                  }, function() {
+                      $(this).removeClass('transition');
+                  });
+              });
+          </script>
+          <script src="./js/anuncio.js"></script>
+          <div id="anuncios-container"></div>
+      </body>
+  
+</html>
+
